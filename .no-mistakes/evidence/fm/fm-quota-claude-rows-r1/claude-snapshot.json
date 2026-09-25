@@ -1,0 +1,242 @@
+{
+  "generatedAt": "2026-09-25T18:10:37.073Z",
+  "schemaVersion": 6,
+  "providers": [
+    {
+      "provider": "claude",
+      "plan": "team",
+      "windows": [
+        {
+          "id": "five_hour",
+          "label": "session",
+          "kind": "session",
+          "resetsAt": "2026-09-25T22:00:00.031597+00:00",
+          "percentRemaining": 95,
+          "pace": {
+            "status": "behind",
+            "reservePercentPoints": 18.5391,
+            "burnMultiple": 0.2124
+          }
+        },
+        {
+          "id": "seven_day",
+          "label": "week",
+          "kind": "weekly",
+          "resetsAt": "2026-09-29T08:00:00.031618+00:00",
+          "percentRemaining": 4,
+          "pace": {
+            "status": "ahead",
+            "reservePercentPoints": -47.0851,
+            "burnMultiple": 1.9626
+          }
+        },
+        {
+          "id": "model:fable",
+          "label": "Fable week",
+          "kind": "model",
+          "resetsAt": "2026-09-29T08:00:00.031769+00:00",
+          "percentRemaining": 0,
+          "pace": {
+            "status": "ahead",
+            "reservePercentPoints": -51.0851,
+            "burnMultiple": 2.0444
+          }
+        }
+      ],
+      "state": {
+        "status": "fresh",
+        "stale": false
+      },
+      "quotaSemantics": {
+        "status": "known",
+        "effectiveAvailability": [
+          {
+            "scope": "all_models",
+            "status": "known",
+            "effectivePercentRemaining": 4,
+            "boundedBy": [
+              "five_hour",
+              "seven_day"
+            ],
+            "limitingWindowIds": [
+              "seven_day"
+            ],
+            "pace": {
+              "status": "mixed",
+              "aheadWindowIds": [
+                "seven_day"
+              ],
+              "worstReservePercentPoints": -47.0851,
+              "worstReserveWindowId": "seven_day"
+            },
+            "runway": {
+              "status": "projected_exhaustion",
+              "usableRunwaySeconds": 12327,
+              "projectedExhaustedAt": "2026-09-25T21:36:03.616Z",
+              "limitingWindowId": "seven_day",
+              "projectionConfidence": "established"
+            },
+            "selection": {
+              "status": "known",
+              "spendPriority": -1.8001
+            }
+          },
+          {
+            "scope": "model:fable",
+            "status": "known",
+            "effectivePercentRemaining": 0,
+            "boundedBy": [
+              "five_hour",
+              "seven_day",
+              "model:fable"
+            ],
+            "limitingWindowIds": [
+              "model:fable"
+            ],
+            "pace": {
+              "status": "mixed",
+              "aheadWindowIds": [
+                "seven_day",
+                "model:fable"
+              ],
+              "worstReservePercentPoints": -51.0851,
+              "worstReserveWindowId": "model:fable"
+            },
+            "runway": {
+              "status": "exhausted_now",
+              "usableRunwaySeconds": 0,
+              "limitingWindowId": "model:fable",
+              "projectedExhaustedAt": "2026-09-25T18:10:37.073Z"
+            },
+            "selection": {
+              "status": "known",
+              "spendPriority": -1.9204
+            }
+          }
+        ]
+      },
+      "accountKey": "cabeza",
+      "accountKeys": [
+        "cabeza"
+      ]
+    },
+    {
+      "provider": "claude",
+      "plan": "team",
+      "windows": [
+        {
+          "id": "five_hour",
+          "label": "session",
+          "kind": "session",
+          "resetsAt": "2026-09-25T20:49:59.762906+00:00",
+          "percentRemaining": 58,
+          "pace": {
+            "status": "behind",
+            "reservePercentPoints": 4.874,
+            "burnMultiple": 0.896
+          }
+        },
+        {
+          "id": "seven_day",
+          "label": "week",
+          "kind": "weekly",
+          "resetsAt": "2026-09-30T15:59:59.762935+00:00",
+          "percentRemaining": 54,
+          "pace": {
+            "status": "ahead",
+            "reservePercentPoints": -16.1327,
+            "burnMultiple": 1.5401
+          }
+        },
+        {
+          "id": "model:fable",
+          "label": "Fable week",
+          "kind": "model",
+          "resetsAt": "2026-09-30T15:59:59.763119+00:00",
+          "percentRemaining": 95,
+          "pace": {
+            "status": "behind",
+            "reservePercentPoints": 24.8673,
+            "burnMultiple": 0.1674
+          }
+        }
+      ],
+      "state": {
+        "status": "fresh",
+        "stale": false
+      },
+      "quotaSemantics": {
+        "status": "known",
+        "effectiveAvailability": [
+          {
+            "scope": "all_models",
+            "status": "known",
+            "effectivePercentRemaining": 54,
+            "boundedBy": [
+              "five_hour",
+              "seven_day"
+            ],
+            "limitingWindowIds": [
+              "seven_day"
+            ],
+            "pace": {
+              "status": "mixed",
+              "aheadWindowIds": [
+                "seven_day"
+              ],
+              "worstReservePercentPoints": -16.1327,
+              "worstReserveWindowId": "seven_day"
+            },
+            "runway": {
+              "status": "projected_exhaustion",
+              "usableRunwaySeconds": 212052,
+              "projectedExhaustedAt": "2026-09-28T05:04:49.568Z",
+              "limitingWindowId": "seven_day",
+              "projectionConfidence": "established"
+            },
+            "selection": {
+              "status": "known",
+              "spendPriority": -0.7422
+            }
+          },
+          {
+            "scope": "model:fable",
+            "status": "known",
+            "effectivePercentRemaining": 54,
+            "boundedBy": [
+              "five_hour",
+              "seven_day",
+              "model:fable"
+            ],
+            "limitingWindowIds": [
+              "seven_day"
+            ],
+            "pace": {
+              "status": "mixed",
+              "aheadWindowIds": [
+                "seven_day"
+              ],
+              "worstReservePercentPoints": -16.1327,
+              "worstReserveWindowId": "seven_day"
+            },
+            "runway": {
+              "status": "projected_exhaustion",
+              "usableRunwaySeconds": 212052,
+              "projectedExhaustedAt": "2026-09-28T05:04:49.568Z",
+              "limitingWindowId": "seven_day",
+              "projectionConfidence": "established"
+            },
+            "selection": {
+              "status": "known",
+              "spendPriority": 0.2083
+            }
+          }
+        ]
+      },
+      "accountKey": "claude",
+      "accountKeys": [
+        "claude"
+      ]
+    }
+  ]
+}
