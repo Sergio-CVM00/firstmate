@@ -1,0 +1,22 @@
+$ bin/fm-teardown.sh stale-task
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /var/folders/6r/l0fllt5s2ms22dl02w182br80000gn/T//fm-lab.zjmZab
+WARNING: watcher still down (same stale episode; last beat: never, grace 300s) - full banner already printed this episode.
+warning: task stale-task's recorded worktree /private/var/folders/6r/l0fllt5s2ms22dl02w182br80000gn/T/fm-lab.zjmZab/pool/1/project was reassigned to task claimant-task (home /var/folders/6r/l0fllt5s2ms22dl02w182br80000gn/T//fm-lab.zjmZab), which claimed that pool slot after this record was written; that slot is no longer stale-task's, so its processes, copy, and claim are left untouched and only stale-task's own cleanup runs.
+REFUSED: scout task stale-task has no report at /var/folders/6r/l0fllt5s2ms22dl02w182br80000gn/T//fm-lab.zjmZab/data/stale-task/report.md.
+The report is the work product. Have the crewmate write it, or use --force after explicit discard approval.
+exit=1
+--- windows:
+driver
+fm-stale-task
+fm-claimant-task
+--- state:
+claimant-task.meta
+stale-task.meta
+--- slot claim:
+task=claimant-task
+home=/var/folders/6r/l0fllt5s2ms22dl02w182br80000gn/T//fm-lab.zjmZab
+--- slot contents:
+.
+..
+.git
+sentinel

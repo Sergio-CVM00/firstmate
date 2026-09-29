@@ -1,0 +1,27 @@
+$ bin/fm-teardown.sh claimant-task
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /var/folders/6r/l0fllt5s2ms22dl02w182br80000gn/T//fm-lab.zjmZab
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+●  WATCHER DOWN - SUPERVISION IS OFF
+●  2 task(s) in flight, but no watcher has a fresh beacon (last beat: never, grace 300s).
+●  Trust the emitted supervision protocol for this harness; do not use shell & for watcher repair.
+●  This is a supervision warning only; the guarded operation WILL still run.
+●  watcher supervision needs Stop-owned automatic recovery; inspect the hook registration and startup status before ending the turn.
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+REFUSED: task claimant-task's recorded worktree /private/var/folders/6r/l0fllt5s2ms22dl02w182br80000gn/T/fm-lab.zjmZab/pool/1/project is also task stale-task's recorded worktree.
+Returning that pool slot would kill stale-task's processes and reset its copy, so nothing was changed - not even with --force.
+The slot's owner claim names claimant-task, so stale-task's record is the stale one: tear down stale-task first, then re-run teardown.
+exit=1
+--- windows:
+driver
+fm-stale-task
+fm-claimant-task
+--- state:
+claimant-task.meta
+stale-task.meta
+--- slot claim:
+task=claimant-task
+home=/var/folders/6r/l0fllt5s2ms22dl02w182br80000gn/T//fm-lab.zjmZab
+--- sentinel:
+ls: x: No such file or directory
+/var/folders/6r/l0fllt5s2ms22dl02w182br80000gn/T//fm-lab.zjmZab/pool/1/project:
+sentinel

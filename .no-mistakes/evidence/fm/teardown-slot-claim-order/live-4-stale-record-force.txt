@@ -1,0 +1,24 @@
+$ bin/fm-teardown.sh stale-task --force
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /var/folders/6r/l0fllt5s2ms22dl02w182br80000gn/T//fm-lab.zjmZab
+WARNING: watcher still down (same stale episode; last beat: never, grace 300s) - full banner already printed this episode.
+warning: task stale-task's recorded worktree /private/var/folders/6r/l0fllt5s2ms22dl02w182br80000gn/T/fm-lab.zjmZab/pool/1/project was reassigned to task claimant-task (home /var/folders/6r/l0fllt5s2ms22dl02w182br80000gn/T//fm-lab.zjmZab), which claimed that pool slot after this record was written; that slot is no longer stale-task's, so its processes, copy, and claim are left untouched and only stale-task's own cleanup runs.
+teardown stale-task complete (window lab:fm-stale-task; pool slot /var/folders/6r/l0fllt5s2ms22dl02w182br80000gn/T//fm-lab.zjmZab/pool/1/project left to task claimant-task (home /var/folders/6r/l0fllt5s2ms22dl02w182br80000gn/T//fm-lab.zjmZab), which it was reassigned to)
+Backlog: stale-task just finished (this home keeps no markdown backlog at /private/var/folders/6r/l0fllt5s2ms22dl02w182br80000gn/T/fm-lab.zjmZab/data/backlog.md). Update /private/var/folders/6r/l0fllt5s2ms22dl02w182br80000gn/T/fm-lab.zjmZab/data/backlog.md - move stale-task to Done, keep Done to the 10 most recent, then re-scan Queued and dispatch only work whose blockers are gone and date is due.
+exit=0
+--- windows:
+driver
+fm-claimant-task
+--- state:
+claimant-task.meta
+home-summary.json
+terminal-outcomes
+--- slot claim:
+task=claimant-task
+home=/var/folders/6r/l0fllt5s2ms22dl02w182br80000gn/T//fm-lab.zjmZab
+--- slot contents:
+.
+..
+.git
+sentinel
+--- worker in slot alive:
+       1

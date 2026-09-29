@@ -1,0 +1,16 @@
+$ bin/fm-teardown.sh claimant-task --force
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /var/folders/6r/l0fllt5s2ms22dl02w182br80000gn/T//fm-lab.zjmZab
+WARNING: watcher still down (same stale episode; last beat: never, grace 300s) - full banner already printed this episode.
+teardown: reaping leaked worktree process(es) for claimant-task: 61873
+teardown claimant-task complete (window lab:fm-claimant-task, worktree /var/folders/6r/l0fllt5s2ms22dl02w182br80000gn/T//fm-lab.zjmZab/pool/1/project)
+Backlog: claimant-task just finished (this home keeps no markdown backlog at /private/var/folders/6r/l0fllt5s2ms22dl02w182br80000gn/T/fm-lab.zjmZab/data/backlog.md). Update /private/var/folders/6r/l0fllt5s2ms22dl02w182br80000gn/T/fm-lab.zjmZab/data/backlog.md - move claimant-task to Done, keep Done to the 10 most recent, then re-scan Queued and dispatch only work whose blockers are gone and date is due.
+exit=0
+--- windows:
+driver
+--- state:
+home-summary.json
+terminal-outcomes
+--- slot claim:
+cat: /var/folders/6r/l0fllt5s2ms22dl02w182br80000gn/T//fm-lab.zjmZab/pool/1/.fm-slot-owner: No such file or directory
+--- treehouse calls:
+treehouse <return> <--force> </var/folders/6r/l0fllt5s2ms22dl02w182br80000gn/T//fm-lab.zjmZab/pool/1/project>
